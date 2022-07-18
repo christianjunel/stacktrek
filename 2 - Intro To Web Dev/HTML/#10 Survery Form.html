@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form - Christian</title>
+    </head>
+    <body>
+        <header style="text-align: center;">
+            <h1>Employee Interests Survey Form</h1>
+        </header>
+        <form action="url_after_submission_here" style="text-align: center;">
+            <label for="name">Enter your name: </label>
+            <input id="name" type="text" name="name" placeholder="CJ Moriones" required><br/><br/>
+            <label for="department">Enter your department: </label>
+            <input id="department" type="text" name="department" placeholder="Department Of Energy" required><br/><br/>
+            <label for="about_yourself">Tell us a little bit about yourself: </label>
+            <textarea id="about_yourself" rows="10" cols="30" name="about_yourself" placeholder="Who are you?"></textarea><br/><br/>
+            <fieldset style="margin: 0px 700px;text-align: center;">
+                <legend>Do you exercise at home?</legend>
+                <input type="radio" id="yes" name="yes-no" value="yes" checked> <label for="yes">Yes</label>
+                <input type="radio" id="no" name="yes-no" value="no"> <label for="no">No</label>
+            </fieldset>
+            <br/>
+            <fieldset style="margin: 0px 400px;text-align: center;">
+                <legend>How do you like to read about your favorite topics?</legend>
+                <input type="checkbox" id="books" name="fave_topics" value="books" checked> <label for="books">Books</label>
+                <input type="checkbox" id="online_resources" name="fave_topics" value="online resources"> <label for="online_resources">Online resources</label>
+                <input type="checkbox" id="phone_apps" name="fave_topics" value="phone apps"> <label for="phone_apps">Phone apps</label>
+                <input type="checkbox" id="magazines" name="fave_topics" value="magazines"> <label for="magazines">Magazines</label>
+            </fieldset>
+            <br/>
+            <label for="movie_genres">What genre of moveis do you like? </label>
+            <select id="movie_genres" name="movie_genres" size="1">
+                <option value="comedy">Comedy</option>
+                <option value="horror">Horror</option>
+                <option value="thriller" selected>Thriller</option>
+                <option value="sci-fi">Sci-Fi</option>
+            </select>
+            <br/><br/>
+            <input type="submit" value="Submit Form">
+        </form>
+    </body>
+</html>
