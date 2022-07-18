@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CJ Moriones</title>
+        <link rel="stylesheet" href="mystyles.css"/>
+        <!-- Not sure why the favicon won't display :( -->
+        <!-- <link rel="icon" href="images/favicon.ico" type="image/ico"/>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/> -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <script>
+          function toAbout() {
+            document.getElementById('side-menu').checked=false;
+            document.getElementById('about-me').scrollIntoView({behavior: 'smooth'});
+            }
+          function toWorks() {
+            document.getElementById('side-menu').checked=false;
+            document.getElementById('my-works').scrollIntoView({behavior: 'smooth'});
+          }
+          function toServices() {
+            document.getElementById('side-menu').checked=false;
+            document.getElementById('my-services').scrollIntoView({behavior: 'smooth'});
+          } 
+          function topFunction() {
+            document.getElementById('side-menu').checked=false;
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Bar should be inside the header tag-->
+        <header class="header">
+          <a onclick="topFunction()" class="logo"><img src="images/cj-logo.png" alt="cj's logo"/></a>
+          <!-- For Hamburger Icon-->
+          <input class="side-menu" type="checkbox" id="side-menu"/>
+          <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+          <!-- Menu -->
+          <nav class="nav">
+            <ul class="menu">
+              <li><a onclick="toAbout()">About</a></li>
+              <li><a onclick="toWorks()">Works</a></li>
+              <li><a onclick="toServices()">Services</a></li>
+              <li><a href="mailto:christianjunelm@gmail.com?subject=Inquiry Via Website&body=Hi there, I find your services interesting. Let's hop on a call?">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div class="hero-parallax">
+              <div class="parallax-title" id="my-name">
+              <h2 class="title">HI, I'M CJ.</h2>
+              <div class="parallax-content">
+                  <p class="hero-content">Multimedia Specialist | Aspiring Web Developer<p>
+              </div>  
+              </div>
+          </div>
+          <!-- ABOUT ME  -->
+          <div class="row" id="about-me">
+              <div class="column">
+                  <img class="my-image" src="images/cj-image.jpg" alt="cj's image"/>
+              </div>
+              <div class="column bio">
+                  <h2>About Me</h2>
+                  <hr class="line-medium"/>
+                  <p>Hi, my name is Christian Junel Moriones. I am a Multimedia Specialist & Aspiring 
+                      Web Developer. I also trained in SEO by finishing up a course Lastly, I feel
+                      very excited on my software engineering bootcamp right now at StackTrek. I just
+                      recently found out how passionate I am on handling tasks that make other people’s 
+                      businesses flourish. To more career growth and success!</p>
+                  <br/>
+                  <h2>Strength & Weaknesses</h2>
+                  <hr class="line-medium"/>
+                  <p>As a person of sheer will and determination, I always do my best to finish what
+                    I need to finish, no matter how herculean it is. There is always room for me to learn and
+                    accept constructive criticism. The thing though is that because of how much I want to grow fast, I tend to forget taking care of my health. All those sleepless nights and being unable to eat at the proper time will surely take a toll on my body. But nevertheless, I do my best to find the time to exercise and rest accordingly.
+                  </p>
+              </div>
+              <div class="clearfix"></div> 
+          </div>
+          <!-- WORKS  -->
+          <div class="mywork-parallax2" id="my-works">
+              <div class="tinted">
+                  <div class="parallax-title">
+                      <h2>MY WORKS</h2>
+                      <!-- <hr class="line-break-title"/> -->
+                  <div class="parallax-content">
+                      <p>Everything created with love.<p>
+                      <p>You can click the button below to view more of my recent projects in Graphic Design.</p>
+                      <p><a href="works.html" class="btn-white">VIEW MORE</a></p>
+                  </div>  
+                  </div>                 
+              </div>
+          </div>
+          <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/Confidence In Actions.jpg">
+                  <img src="images/Confidence In Actions.jpg" alt="people discussing in a meeting room" width="600" height="600">
+                </a>
+              </div>
+            </div>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/Good Belly Laugh.jpg">
+                  <img src="images/Good Belly Laugh.jpg" alt="image about laughing" width="600" height="600">
+                </a>
+              </div>
+            </div>            
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/Parietal Lobe.jpg">
+                  <img src="images/Parietal Lobe.jpg" alt="infographic on parietal lobe" width="600" height="600">
+                </a>
+              </div>
+            </div>    
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/Stop Stopping Yourself.jpg">
+                  <img src="images/Stop Stopping Yourself.jpg" alt="stop stopping yourself graphic quote" width="600" height="600">
+                </a>
+              </div>
+            </div>        
+            <div class="clearfix"></div>
+            <!-- MY SERVICES  -->
+            <h2 class="text-heading" name="my-services" id="my-services">MY SERVICES</h2>
+            <hr class="line-medium-center"/>
+            <div class="row-3">
+              <div class="column-3">
+                <img src="images/graphicdesign.jpg" alt="graphic design" width="450" height="450"/>
+                <h2>Multimedia Services</h2>
+                <p>I can do graphic design such as brand
+                  identity, banners, infographics, business
+                  cards, and many more. I do video editing
+                  and sometimes do animations for my
+                  clients. I am also confident in my skills in
+                  Adobe Creative Suites.</p>
+              </div>
+            </div>
+            <div class="row-3">
+              <div class="column-3">
+                <img src="images/socmed.jpg" alt="social media management" width="450" height="450"/>
+                <h2>Social Media Management</h2>
+                <p>Integration of social media such as
+                  Facebook, Twitter, and Instagram on
+                  businesses to gain leads, engage with
+                  customers, form healthy connections
+                  through making and planning contents to
+                  be posted, and acquire knowledge about
+                  the clients’ competitors.</p>
+              </div>
+            </div>
+            <div class="row-3">
+              <div class="column-3">
+                <img src="images/seo.jpg" alt="search engine optimization" width="450" height="450"/>
+                <h2>Search Engine Optimization</h2>
+                <p>Applying techniques that help with ranking
+                  up the business on search engines
+                  results page (e.g. Google, Bing) to acquire
+                  and gain more potential leads.</p>
+              </div>
+            </div>
+            <div class="clearfix"></div> 
+          </main>
+          <footer>
+            <div>
+            <a href="#"><img src="images/cj-logo.png" alt="cj's logo"/></a>
+            <p>After nearly 6 years of working for competent design firms in the industry, I now focus all of my time on helping clients of my own. Whether you’re looking to redesign your website or just need help with user experience; need printed materials like business cards, brochures, or posters; are undertaking a logo or identity rework; even if you’re just working on a Powerpoint presentation—I’m here to help.<br>
+            </div>
+            <div class="socmed-icons">
+              <a target="_blank" href="https://www.facebook.com/christianjunel.moriones.9" class="fa fa-facebook fa-lg"></a>
+              <a target="_blank" href="https://twitter.com/juneldaexplorer" class="fa fa-twitter fa-lg"></a>
+              <a target="_blank" href="https://www.instagram.com/cjmoriones/" class="fa fa-linkedin fa-lg"></a>
+              <a target="_blank" href="https://www.linkedin.com/in/christianjunelmoriones/" class="fa fa-instagram fa-lg"></a>
+              <a target="_blank" href="mailto:christianjunelm@gmail.com?subject=Inquiry Via Website&body=Hi there, I find your services interesting. Let's hop on a call?" class="fa fa-envelope fa-lg"></a>
+            </div>
+          </footer>
+    </body>
+</html>

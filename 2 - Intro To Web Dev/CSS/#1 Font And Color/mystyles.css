@@ -1,0 +1,30 @@
+/* For Font And Color Exercise */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrap {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+h1 {
+    text-align: left;
+}
+
+* {
+    background-color: rgb(93, 93, 232);
+}
+
+p.copyright {
+    text-align: left;
+    font-style: italic;
+}
