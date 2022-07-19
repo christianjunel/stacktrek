@@ -1,0 +1,12 @@
+.container img{
+    width: 500px;
+    height: 587px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 60px;
+}
