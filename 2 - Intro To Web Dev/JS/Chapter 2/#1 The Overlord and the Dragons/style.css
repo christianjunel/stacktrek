@@ -1,0 +1,23 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.name {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container img {
+    width: 500px;
+    height: 600px;
+}
+
+#result {
+    border: 2px dashed black;
+    width: 20%;
+    padding: 10px 0px;
+    margin: 0 auto;
+}
