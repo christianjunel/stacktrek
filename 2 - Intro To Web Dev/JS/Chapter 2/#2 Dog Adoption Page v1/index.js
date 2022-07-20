@@ -53,4 +53,4 @@ window.onload = function onload() {
         <h2 id="dogyears">${arrOfDogs[2]['age']}</h2>
         <h2 id="fave-toys">Fave Toys: ${arrOfDogs[2]['toys']}</h2>
         `; 
-}
+};

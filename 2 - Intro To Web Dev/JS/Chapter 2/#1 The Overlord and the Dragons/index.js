@@ -18,4 +18,4 @@ window.onload = function onload() {
     info.innerHTML = `There are ${noOfDragons} dragons, and you have ${noOfBullets} bullets. Did you win?`;
     result.innerHTML = getResult(noOfDragons, noOfBullets);
     
-}
+};

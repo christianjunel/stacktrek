@@ -43,5 +43,5 @@ window.onload = function onload() {
         <h2 id="fave-toys">Fave Toys: ${dog.toys}</h2>
         </article>
         `
-    )
-}
+    );
+};
