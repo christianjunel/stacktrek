@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+div.column {
+    border: 1px solid black;
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+div.row-2 {
+    float: left;
+    width: 50%;
+}
+
+label {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+article {
+   
+    margin: 0 auto;
+}
