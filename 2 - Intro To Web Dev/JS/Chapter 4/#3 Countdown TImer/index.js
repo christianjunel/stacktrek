@@ -22,7 +22,7 @@ window.onload = function onload() {
                 <img src="https://media2.giphy.com/media/5xaOcLGm3mKRQuDYCgU/giphy.gif"/>
                 `;
                 countdownTimer.innerHTML = `${counter} (๑✪ᆺ✪๑)`;
-                return clearInterval(myInterval);
+                clearInterval(myInterval);
             }
             counter--;
         }, 1000);
