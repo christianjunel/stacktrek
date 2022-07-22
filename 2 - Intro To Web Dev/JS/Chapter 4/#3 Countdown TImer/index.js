@@ -18,10 +18,10 @@ window.onload = function onload() {
             if (counter === 0){
                 startBtn.remove();
                 launch.innerHTML = `
-                <br>
+                <h2>The cat rocket has launched!</h2>
                 <img src="https://media2.giphy.com/media/5xaOcLGm3mKRQuDYCgU/giphy.gif"/>
                 `;
-                countdownTimer.innerHTML = `${counter} ----> Time to take meowff (๑✪ᆺ✪๑)`;
+                countdownTimer.innerHTML = `${counter} (๑✪ᆺ✪๑)`;
                 return clearInterval(myInterval);
             }
             counter--;
