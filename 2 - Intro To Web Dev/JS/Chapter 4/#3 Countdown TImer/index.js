@@ -19,7 +19,7 @@ window.onload = function onload() {
                 startBtn.remove();
                 launch.innerHTML = `
                 <br>
-                <img src="https://media2.giphy.com/media/5xaOcLGm3mKRQuDYCgU/giphy.gif?cid=ecf05e47b1dwswsc0pq67bpmzus3xcsgv8hmxnjz6nk04ba2&rid=giphy.gif&ct=g"/>
+                <img src="https://media2.giphy.com/media/5xaOcLGm3mKRQuDYCgU/giphy.gif"/>
                 `;
                 countdownTimer.innerHTML = `${counter} ----> Time to take meowff (๑✪ᆺ✪๑)`;
                 return clearInterval(myInterval);
