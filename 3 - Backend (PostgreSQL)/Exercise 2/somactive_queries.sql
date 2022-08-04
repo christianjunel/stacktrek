@@ -31,7 +31,7 @@ CREATE TABLE details_for_macro_calculation (
     macrodetail_id SERIAL PRIMARY KEY NOT NULL,
     detail_type VARCHAR(50) NOT NULL,
     detail_value VARCHAR(40) NOT NULL,
-    inserted_at TIMESTAMP NOT NULL
+    inserted_at TIMESTAMP NOT NULL,
     user_id INT NOT NULL,
         FOREIGN KEY(user_id)
             REFERENCES users(user_id)
