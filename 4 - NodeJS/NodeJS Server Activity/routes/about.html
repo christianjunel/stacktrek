@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CJ</title>
+</head>
+<body>
+    <h1>About Christian</h1>
+    <div id="bio"></div>
+
+    <script type="module">
+        import {fetchJSON} from 'http://localhost:8000/bio';
+        console.log(fetchJSON());
+    </script>
+
+    <!-- <script type="text/javascript">
+        fetch('http://localhost:8000/details', {
+            method : 'GET',
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            mode:"cors",
+            cache:"default"
+           })
+            .then(res => res.json())
+            .then(data => {
+                const bio = document.getElementById('bio');
+                bio.innerHTML = `
+                <p>My complete name is ${data.name}.</p>
+                <p>I am ${data.age} years of age.</p>
+                <p>My hobbies include: ${data.hobbies}</p>
+                <p>I have a pet ${data.pet}.</p>
+                <p>My favorite food/s are ${data.favoriteFood}</p>
+                `;
+            })
+            
+    </script> -->
+
+    <!-- <script type="text/javascript">
+        const bio = document.getElementById('bio');
+        bio.innerHTML = `
+        
+        test
+        `;
+    </script> -->
+</body>
+</html>
