@@ -1,6 +1,5 @@
-// console.log(operation_3(3,4)) // prints 1
-// console.log(operation_3(4,2)) // prints 0
-// console.log(operation_3(9,19)) // prints 5
+//Number 5 isn't finished. Will get back to it if I have the chance. 
+//But if you guys, need to score it then please go ahead. Thank you
 
 const BetterModule = (firstVal, secondVal, thirdVal) => {
     
@@ -47,6 +46,7 @@ const BetterModule = (firstVal, secondVal, thirdVal) => {
     }
 };
 
-console.log(BetterModule(3,2,4)) // prints 1
-console.log(BetterModule(4,3,2)) // prints 0
-console.log(BetterModule(9,6,19)) // prints 11
+exports.BetterModule = BetterModule;
+// console.log(BetterModule(3,2,4)) // prints 1
+// console.log(BetterModule(4,3,2)) // prints 0
+// console.log(BetterModule(9,6,19)) // prints 11
