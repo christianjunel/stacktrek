@@ -30,7 +30,8 @@ app.get('/data', (req, res) => {
 
 app.get('/search/:id', (req, res) => {
     readJSON('records.json').then(result => {
-        if (result[req.params['id']]) {
+        if (result[req.params['id'] - 1]) {
+            
             // console.log(req.params.id);
             res.status(200).json(result[req.params['id'] - 1]);
         } else {
