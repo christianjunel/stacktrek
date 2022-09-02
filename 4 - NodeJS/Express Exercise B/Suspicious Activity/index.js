@@ -85,7 +85,7 @@ app.post('/datacheck', logger, (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.status(404).send('Sorry, we cannot find this page');
+    res.status(404).send('Sorry, we cannot find this page.');
 })
 
 app.listen(PORT, () => {
