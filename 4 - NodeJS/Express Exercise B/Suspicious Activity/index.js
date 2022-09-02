@@ -84,6 +84,10 @@ app.post('/datacheck', logger, (req, res) => {
     // res.json(fakeData);
 })
 
+app.get('*', (req, res) => {
+    res.status(404).send('Sorry, we cannot find this page');
+})
+
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}.`)
 })

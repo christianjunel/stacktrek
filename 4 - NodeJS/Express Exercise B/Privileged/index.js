@@ -99,4 +99,8 @@ router.delete('/', [reqID, idChecker], (req, res) => {
 	console.log('Delete page loaded...')
 })
 
+router.get('*', (req, res) => {
+    res.status(404).send('Sorry, we cannot find this page');
+})
+
 app.listen(8000, () => console.log('Listening at port 8000'))
