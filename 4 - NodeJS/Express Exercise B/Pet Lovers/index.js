@@ -115,7 +115,7 @@ router.get('/api/pet/', (req, res) => {
         if (result) {
             res.status(200).json(result);
         } else {
-            res.status(400).json([]);
+            res.status(400).json(result);
         }
     })
 })
