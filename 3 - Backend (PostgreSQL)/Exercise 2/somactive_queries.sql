@@ -3,7 +3,7 @@
 CREATE DATABASE somactive;
 
 CREATE TABLE users (
-    user_id SERIAL PRIMARY KEY NOT NULL,
+    user_id VARCHAR(100) PRIMARY KEY NOT NULL,
     username VARCHAR(60) NOT NULL,
     first_name VARCHAR(60) NOT NULL,
     last_name VARCHAR(60) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE login_sessions (
     session_id SERIAL PRIMARY KEY NOT NULL,
     session_start TIMESTAMP NOT NULL,
     session_end TIMESTAMP NOT NULL,
-    user_id INT NOT NULL,
+    user_id VARCHAR(100) NOT NULL,
         FOREIGN KEY(user_id)
             REFERENCES users(user_id)
 );
@@ -32,7 +32,7 @@ CREATE TABLE details_for_macro_calculation (
     detail_type VARCHAR(50) NOT NULL,
     detail_value VARCHAR(40) NOT NULL,
     inserted_at TIMESTAMP NOT NULL,
-    user_id INT NOT NULL,
+    user_id VARCHAR(100) NOT NULL,
         FOREIGN KEY(user_id)
             REFERENCES users(user_id)
 );
@@ -41,7 +41,7 @@ CREATE TABLE reminders_to_self (
     reminder_id SERIAL PRIMARY KEY NOT NULL,
     user_reminder_to_self VARCHAR(255) NOT NULL,
     inserted_at TIMESTAMP NOT NULL,
-    user_id INT NOT NULL,
+    user_id VARCHAR(100) NOT NULL,
         FOREIGN KEY(user_id)
             REFERENCES users(user_id)
 );
@@ -51,7 +51,7 @@ CREATE TABLE bmi_overview (
     weight_in_kg DEC(6,2) NOT NULL,
     height_in_cm DEC(6,2) NOT NULL,
     inserted_at TIMESTAMP NOT NULL,
-    user_id INT NOT NULL,
+    user_id VARCHAR(100) NOT NULL,
         FOREIGN KEY(user_id)
             REFERENCES users(user_id)
 );
