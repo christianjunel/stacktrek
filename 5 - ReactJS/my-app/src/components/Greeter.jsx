@@ -1,6 +1,6 @@
 const Greeter = (props) => {
     return (
-        <div>Hello {props.name}!</div>
+        <div>Hello {props.name}, {props.greeting}!!</div>
     );
 };
 

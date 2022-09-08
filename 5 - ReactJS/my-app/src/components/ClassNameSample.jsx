@@ -1,3 +1,5 @@
+import './styles/ClassNameSample.css';
+
 const someContent = "Some Content";
 const element = (
     <div className="red border">
