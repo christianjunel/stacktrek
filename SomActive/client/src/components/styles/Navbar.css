@@ -1,0 +1,57 @@
+body {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+:root {
+    --white: #ffffff;
+    --darkblue: #08315e;
+    --lightblue: #00b9f2;
+    --darkgray: #1b1b1b;
+    --red: #d50c3a;
+    --lightred: #fd2255;
+}
+
+.main-nav {
+    padding: 0.6rem 2rem;
+    background-color: rgb(245, 245, 245);
+}
+
+#basic-navbar-nav a {
+    color: var(--darkblue);
+    padding: 0.7rem 1.45rem;
+}
+
+#basic-navbar-nav a:hover {
+    background-color: transparent;
+    color: var(--lightred);
+    transform: scale(1.1);
+    transition: all ease 500ms;
+}
+
+#basic-navbar-nav > div.right-nav.navbar-nav > a.btn.btn-danger {
+    color: white;
+}
+
+#basic-navbar-nav > div.right-nav.navbar-nav > a.btn.btn-danger:hover {
+    color: var(--red);
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+/* 
+#navbarSupportedContent {
+    background-color: white;
+} */
+
+.fa {
+    color: white;
+}

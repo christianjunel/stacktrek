@@ -1,0 +1,107 @@
+:root {
+    --white: #ffffff;
+    --darkblue: #08315e;
+    --lightblue: #00b9f2;
+    --darkgray: #1b1b1b;
+    --red: #d50c3a;
+    --lightred: #fd2255;
+}
+
+.flexbox-dashboard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* height: 75vh; */
+    padding: 50px;
+    margin: 0;
+    background-image: url('../imgs/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: var(--white);
+}
+
+.db-prof-pic {
+    border-radius: 50%;
+    object-fit: cover;
+    border: dashed 3px var(--lightblue);
+}
+
+.the-name {
+    padding-top: 1rem;
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.the-reminder {
+    margin: 0;
+    padding: 0;
+}
+
+.flexxbox-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+    text-align: left;
+}
+
+/* .flexbox-item {
+    width: 1200px;
+} */
+
+.flexxbox-item-2, .flexxbox-item-1 {
+    background-color: #ffffff;
+    box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+    -moz-box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+    padding: 40px;
+    border-radius: 20px;
+    height: 600px;
+    width: 550px;
+}
+
+
+.flexxbox-item h2 {
+    margin-right: auto;
+    letter-spacing: 2px;
+    margin-top: auto;
+}
+
+.bmi {
+    background-color:var(--white);
+	border-radius:10px;
+    border: dashed 2px var(--lightblue);
+	color:var(--lightblue);
+	text-decoration:none;
+    padding: 50px 15px;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 1rem;
+}
+
+.flexbox-item.flexxbox-item-2, .flexbox-item.flexxbox-item-1 h2 {
+    margin-bottom: 20px;
+}
+
+.bmi-p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.bmi-desc {
+    margin: 0;
+}
+
+.bmi-overview {
+    margin-top: 50px;
+}
+

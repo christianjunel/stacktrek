@@ -32,7 +32,7 @@ const ArraySample = () => {
     return (
         <div>
     	{userList.map(user => 
-        	<Greeter name={user.name} greeting={user.greeting} />
+        	<Greeter key={user.name.toString()} name={user.name} greeting={user.greeting} />
         )}
         </div>
     );

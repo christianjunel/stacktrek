@@ -1,0 +1,56 @@
+:root {
+    --white: #ffffff;
+    --darkblue: #08315e;
+    --lightblue: #00b9f2;
+    --darkgray: #1b1b1b;
+    --red: #d50c3a;
+    --lightred: #fd2255;
+}
+
+.flexbox-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding: 0;
+    margin: 0;
+    background-image: url('../imgs/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.login-form {
+    width: 500px;
+    align-self: center;
+    padding: 50px;
+    margin: 0;
+    background-color: var(--white);
+    border-radius: 3px;
+    box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+    -moz-box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+}
+
+.login-form h1{
+    padding-bottom: 1.2rem;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.login-form button{
+    padding: .8rem;
+    margin-top: .4rem;
+    font-weight: 600;
+}
+
+.username-label, .password-label {
+    /* display: block;
+    text-align: left; */
+    padding-bottom: .4rem;
+}
+
+.alert-dismissible .btn-close {
+ margin-top: -0.03rem;
+}

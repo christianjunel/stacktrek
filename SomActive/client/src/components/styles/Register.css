@@ -1,0 +1,69 @@
+:root {
+    --white: #ffffff;
+    --darkblue: #08315e;
+    --lightblue: #00b9f2;
+    --darkgray: #1b1b1b;
+    --red: #d50c3a;
+    --lightred: #fd2255;
+}
+
+.flexbox-registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 3rem 2rem;
+    margin: 0;
+    background-image: url('../imgs/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.registration-form {
+    width: 400px;
+    align-self: center;
+    padding: 25px;
+    margin: 0;
+    background-color: var(--white);
+    border-radius: 3px;
+    box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+    -moz-box-shadow: 2px 1px 14px 3px rgba(0,0,0,0.12);
+}
+
+.sex-radio {
+    text-align: left;
+}
+
+.col{
+    flex: 0 0;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    object-fit: cover;
+    /* width: 200px; */
+}
+
+.registration {
+    margin-top: 30px;
+}
+
+.row-sex {
+    flex-wrap: nowrap;
+}
+
+fieldset {
+    display: flex;
+}
+
+.login-link {
+    color: #676767;
+    padding: 1rem;
+}
+
+.alert-dismissible .btn-close {
+    margin-top: -0.03rem;
+}
