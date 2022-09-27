@@ -146,8 +146,8 @@ const Dashboard = ({ setAuth }) => {
                     <p className="bmi-p">Weight (kg): <strong>{weightInKG}</strong></p>
                     <p className="bmi-p">Height (cm): <strong>{heightInCM}</strong></p>
                     <div className="bmi-overview">
-                        <h2>Your BMI is {bmiScore}</h2>
-                        <p className="bmi" id="bmi">{bmiStatus}</p>
+                        <h2>Your BMI is {bmiScore}&nbsp;&nbsp;<span className="bmi-cat" id="bmi-cat">{bmiStatus}</span></h2>
+                        {/* <p className="bmi" id="bmi">{bmiStatus}</p> */}
                         <p className="bmi-desc">{bmiDesc}</p>
                         <BMIUpdateModal />
                     </div>

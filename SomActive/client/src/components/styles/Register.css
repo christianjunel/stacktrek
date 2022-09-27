@@ -22,7 +22,7 @@
 }
 
 .registration-form {
-    width: 400px;
+    width: 580px;
     align-self: center;
     padding: 25px;
     margin: 0;
@@ -34,12 +34,12 @@
 }
 
 .sex-radio {
-    text-align: left;
+    justify-content: flex-end;
 }
 
-.col{
-    flex: 0 0;
-}
+/* .col{
+    column-gap: 200px;
+} */
 
 .profile-picture {
     border-radius: 50%;
@@ -51,12 +51,9 @@
     margin-top: 30px;
 }
 
-.row-sex {
-    flex-wrap: nowrap;
-}
-
 fieldset {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .login-link {

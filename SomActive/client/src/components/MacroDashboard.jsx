@@ -107,9 +107,9 @@ const MacroDashboard = (props, { setAuth }) => {
         setDisabled(true);
 
         try {
-            let testa = !the_activity ? activity : the_activity
-            let testd = !the_diet ? diet : the_diet
-            const body = {testa, testd};
+            let passActivity = !the_activity ? activity : the_activity
+            let passDiet = !the_diet ? diet : the_diet
+            const body = {passActivity, passDiet};
 
             const response = await fetch(
                 "http://localhost:8000/macroupdate",
@@ -152,6 +152,7 @@ const MacroDashboard = (props, { setAuth }) => {
         <p className="bmi-p">Weight (kg): <strong>{weightInKG}</strong></p>
         <p className="bmi-p">Height (cm): <strong>{heightInCM}</strong></p> */}
         <InputGroup className="mb-3">
+            <InputGroup.Text id="basic-addon2">Activity</InputGroup.Text>
             <Form.Select required onChange={e => onChange(e)} name="the_activity" aria-label="Default select example" value={!the_activity ? activity : the_activity}>
                 <option value={1.2}>Little to no exercise</option>
                 <option value={1.375}>Light exercise (1 to 3 days per week)</option>
@@ -160,18 +161,17 @@ const MacroDashboard = (props, { setAuth }) => {
                 <option value={1.9}>Very heavy exercise (twice per day, extra heavy workouts)</option>
             </Form.Select>
             <Form.Control.Feedback type="invalid">This field is required.</Form.Control.Feedback>
-            <InputGroup.Text id="basic-addon2">Activity</InputGroup.Text>
             </InputGroup>
 
             <InputGroup className="mb-3">
-            <Form.Select required onChange={e => onChange(e)} name="the_diet" aria-label="Default select example" value={!the_diet ? diet: the_diet}>
-                <option value={1}>High-Carb (60/25/15)</option>
-                <option value={2}>Moderate (50/30/20)</option>
-                <option value={3}>Zone Diet (40/30/30)</option>
-                <option value={4}>Low-Carb (25/45/30)</option>
-            </Form.Select>
-            <Form.Control.Feedback type="invalid">This field is required.</Form.Control.Feedback>
-            <InputGroup.Text id="basic-addon2">Diet</InputGroup.Text>
+                <InputGroup.Text id="basic-addon2">Diet</InputGroup.Text>
+                <Form.Select required onChange={e => onChange(e)} name="the_diet" aria-label="Default select example" value={!the_diet ? diet: the_diet}>
+                    <option value={1}>High-Carb (60/25/15)</option>
+                    <option value={2}>Moderate (50/30/20)</option>
+                    <option value={3}>Zone Diet (40/30/30)</option>
+                    <option value={4}>Low-Carb (25/45/30)</option>
+                </Form.Select>
+                <Form.Control.Feedback type="invalid">This field is required.</Form.Control.Feedback>
             </InputGroup>
             {showMacroAlert ? <Alert variant="success" onClose={() => setShowMacroAlert(false)} dismissible>
                     Macro updated.

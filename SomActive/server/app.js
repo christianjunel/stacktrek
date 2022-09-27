@@ -187,13 +187,13 @@ app.get('/nutrition', auth, async(req, res) => {
 app.put('/macroupdate', auth, async (req, res) => {
     try {
         //proper naming convention
-        const { testa, testd } = req.body
+        const { passActivity, passDiet } = req.body
 
         await pool.query(`
         UPDATE users
         SET activity = $1, diet = $2
         WHERE user_id = $3 RETURNING *
-        `, [testa, testd, req.user.user_id])
+        `, [passActivity, passDiet, req.user.user_id])
 
         res.json("Macro updated");
     } catch (error) {

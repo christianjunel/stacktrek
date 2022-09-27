@@ -116,6 +116,7 @@ const Register = ({ setAuth, selected }) => {
                         Username is already taken or you aren't connected to the database/internet.
                     </Alert> : null}
                     <Col className="registration mb-3">
+                        
                         <Form.Group controlId="formGridUsername">
                             <FloatingLabel
                                 controlId="floatingInput"
@@ -127,7 +128,9 @@ const Register = ({ setAuth, selected }) => {
                                 <Form.Control.Feedback type="invalid">Username is required.</Form.Control.Feedback>
                             </FloatingLabel>
                         </Form.Group>
-                        <Form.Group controlId="formGridPassword">
+
+                        <Row>
+                        <Form.Group as={Col} controlId="formGridPassword">
                             <FloatingLabel
                                     controlId="floatingPassword"
                                     label="Password"
@@ -138,7 +141,7 @@ const Register = ({ setAuth, selected }) => {
                             </FloatingLabel>     
                         </Form.Group>
                         
-                        <Form.Group controlId="formGridCPassword">
+                        <Form.Group as={Col} controlId="formGridCPassword">
                             <FloatingLabel
                                     controlId="floatingCPassword"
                                     label="Confirm Password"
@@ -148,8 +151,10 @@ const Register = ({ setAuth, selected }) => {
                             <Form.Control.Feedback type="invalid">Password confirmation is required.</Form.Control.Feedback>
                             </FloatingLabel>
                         </Form.Group>
+                        </Row>
 
-                        <Form.Group controlId="formGridFirstName">
+                        <Row>
+                        <Form.Group as={Col} controlId="formGridFirstName">
                             <FloatingLabel
                                     controlId="floatingFirstName"
                                     label="First Name"
@@ -160,7 +165,7 @@ const Register = ({ setAuth, selected }) => {
                             </FloatingLabel>
                         </Form.Group>
 
-                        <Form.Group controlId="formGridLastName">
+                        <Form.Group as={Col} controlId="formGridLastName">
                             <FloatingLabel
                                     controlId="floatingLastName"
                                     label="Last Name"
@@ -170,17 +175,7 @@ const Register = ({ setAuth, selected }) => {
                             <Form.Control.Feedback type="invalid">This field is required.</Form.Control.Feedback>
                             </FloatingLabel>
                         </Form.Group>
-
-                        <Form.Group controlId="formGridBirthDate">
-                            <FloatingLabel
-                                    controlId="floatingBirthDate"
-                                    label="Birth Date"
-                                    className="mb-3"
-                                >
-                            <Form.Control type="date" required placeholder="Birth Date" name="birthdate" value={birthdate} onChange={e => onChange(e)} />
-                            <Form.Control.Feedback type="invalid">This field is required.</Form.Control.Feedback>
-                            </FloatingLabel>
-                        </Form.Group>
+                        </Row>
 
                         <Form.Group controlId="formGridEmailAddress">
                             <FloatingLabel
@@ -193,7 +188,19 @@ const Register = ({ setAuth, selected }) => {
                             </FloatingLabel>
                         </Form.Group>
 
-                        <Form.Group controlId="formGridWeightInKG">
+                        <Row>
+                        <Form.Group as={Col} controlId="formGridBirthDate">
+                            <FloatingLabel
+                                    controlId="floatingBirthDate"
+                                    label="Birth Date"
+                                    className="mb-3"
+                                >
+                            <Form.Control type="date" required placeholder="Birth Date" name="birthdate" value={birthdate} onChange={e => onChange(e)} />
+                            <Form.Control.Feedback type="invalid">This field is required.</Form.Control.Feedback>
+                            </FloatingLabel>
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridWeightInKG">
                             <FloatingLabel
                                     controlId="floatingWeightInKG"
                                     label="Weight In KG"
@@ -204,19 +211,20 @@ const Register = ({ setAuth, selected }) => {
                             </FloatingLabel>
                         </Form.Group>
 
-                        <Form.Group controlId="formGridHeightInCM">
+                        <Form.Group className="mb-2" as={Col} controlId="formGridHeightInCM">
                             <FloatingLabel
                                     controlId="floatingHeightInCM"
-                                    label="Height In CM"
+                                    label="Height(cm)"
                                     className="mb-3"
                                 >
                             <Form.Control type="number" required placeholder="Height In CM" name="height_in_cm" value={height_in_cm} onChange={e => onChange(e)}/>
                             <Form.Control.Feedback type="invalid">This field is required.</Form.Control.Feedback>
                             </FloatingLabel>
                         </Form.Group>
+                        </Row>
 
                         <fieldset>
-                            <Form.Group as={Col} className="sex-radio mb-3">
+                            <Form.Group className="sex-radio mb-3">
                                 <Row className="row-sex">
                                     <Col className="check-sex">
                                     <Form.Label>Sex: </Form.Label>
@@ -250,6 +258,7 @@ const Register = ({ setAuth, selected }) => {
                                 </Row>
                             </Form.Group>
                         </fieldset>
+                        
                         <Form.Group controlId="formTextArea" className="mb-3">
                             <FloatingLabel controlId="floatingTextarea2" label="Your first reminder to yourself...">
                                 <Form.Control

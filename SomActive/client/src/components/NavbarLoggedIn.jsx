@@ -45,9 +45,9 @@ const NavbarCompLoggedIn = ({ setAuth }) => {
                             Anaerobic
                         </NavDropdown.Item>    
                     </NavDropdown>
-                    <Nav.Link href="#nutrition-videos">
+                    {/* <Nav.Link href="#nutrition-videos">
                         Nutrition
-                    </Nav.Link>
+                    </Nav.Link> */}
                 </Nav>
                 <Nav>
                 <Button variant="danger" onClick={logout}>Log out</Button>

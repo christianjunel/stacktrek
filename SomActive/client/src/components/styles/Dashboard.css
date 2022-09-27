@@ -88,6 +88,19 @@
     padding: 1rem;
 }
 
+.bmi-cat {
+	border-radius:10px;
+    font-size: medium;
+    border: dashed 2px var(--lightblue);
+	color:var(--lightblue);
+	text-decoration:none;
+    padding: 50px 15px;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+
 .flexbox-item.flexxbox-item-2, .flexbox-item.flexxbox-item-1 h2 {
     margin-bottom: 20px;
 }
@@ -99,6 +112,7 @@
 
 .bmi-desc {
     margin: 0;
+    margin-top: 40px;
 }
 
 .bmi-overview {
