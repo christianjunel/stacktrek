@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -25,6 +25,17 @@ function App() {
   const setAuth = boolean => {
     setIsAuthenticated(boolean)
   }
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (isAuthenticated === true) {
+  //       setIsAuthenticated(true)
+  //     }
+  //     console.log()
+  //   }, 3000);
+  //   return () =>  clearInterval(interval)
+    
+  // }, [isAuthenticated])
   
   return (
     <div className="App">

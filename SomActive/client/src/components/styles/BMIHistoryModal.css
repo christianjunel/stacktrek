@@ -1,0 +1,18 @@
+.bmi-list-item{
+    color: white;
+    padding: 0.6rem;
+    background-color:var(--red);
+	border-radius:5px;
+    width: 200px;
+}
+
+.bmi-list-item-details {
+    border: dashed 2px var(--red);
+    padding: 0.3rem;
+    border-radius:5px;
+    color: var(--red);
+}
+
+/* .bmi-list-item-desc {
+    margin-top: 200px;
+} */

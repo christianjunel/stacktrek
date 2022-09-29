@@ -172,6 +172,19 @@ app.get('/workout', auth, async(req, res) => {
     }
 })
 
+app.get('/bmihistory', auth, async(req, res) => {
+    try {
+        const bmihistory = await pool.query(`
+            SELECT weight_in_kg, height_in_cm, inserted_at FROM bmi_overview
+            WHERE user_id = $1
+        `, [req.user.user_id]);
+
+        res.json(bmihistory.rows)
+    } catch (error) {
+        console.log(error)
+    }
+})
+
 app.get('/nutrition', auth, async(req, res) => {
     try {
         const nutrition = await pool.query(`

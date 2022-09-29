@@ -44,7 +44,7 @@ const Nutrition = ({ setAuth }, props) => {
     }, [diet])
     return (
         <div>
-            {console.log(props.diet)}
+            
             <h1 id="nutrition-videos">Related Nutrition Videos</h1>
             <div class="container">
                     <div class="flexbox-container">

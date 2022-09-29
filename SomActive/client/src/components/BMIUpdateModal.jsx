@@ -66,7 +66,7 @@ const BMIUpdateModal = () => {
 
     return (
         <>
-        <Button className='bmi-update-modal' variant="danger" onClick={handleShow}>
+        <Button className='bmi-update-modal mb-2' variant="danger" onClick={handleShow}>
             Update
         </Button>
 

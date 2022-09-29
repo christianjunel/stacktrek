@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
+import Row from "react-bootstrap/esm/Row";
 // import Button from 'react-bootstrap/Button';
 import Image from "react-bootstrap/Image";
+import BMIHistoryModal from "./BMIHistoryModal";
 import BMIUpdateModal from "./BMIUpdateModal";
 import MacroDashboard from "./MacroDashboard";
 import Nutrition from "./Nutrition";
 import './styles/Dashboard.css';
 import Workouts from "./Workouts";
+import Col from 'react-bootstrap/Col';
+
 // import BMI from "./BMI";
 // import DisplayPics from "./DisplayPics";
 // import Tweets from "./Tweets";
@@ -148,8 +152,13 @@ const Dashboard = ({ setAuth }) => {
                     <div className="bmi-overview">
                         <h2>Your BMI is {bmiScore}&nbsp;&nbsp;<span className="bmi-cat" id="bmi-cat">{bmiStatus}</span></h2>
                         {/* <p className="bmi" id="bmi">{bmiStatus}</p> */}
-                        <p className="bmi-desc">{bmiDesc}</p>
-                        <BMIUpdateModal />
+                        <p className="bmi-desc mb-3">{bmiDesc}</p>
+                       
+                          
+                            <BMIUpdateModal />&nbsp;&nbsp;<span><BMIHistoryModal /></span>
+                            
+                          
+                     
                     </div>
                 </div>
             </div>
