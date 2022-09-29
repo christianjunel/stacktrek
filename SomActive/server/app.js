@@ -10,7 +10,7 @@ import multer from "multer"
 
 const app = express();
 const pool = connectDatabase();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const uid = uuidv4();
 
 app.use(cors());
