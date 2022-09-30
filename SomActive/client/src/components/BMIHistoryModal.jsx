@@ -23,7 +23,7 @@ const BMIHistoryModal = () => {
     const getBMIHistory = async () => {
         try {
             const response = await fetch(
-                "http://localhost:8000/bmihistory",
+                "https://somactive-server-test.herokuapp.com/bmihistory",
                 {
                     method: "GET",
                     //retrieving the token and putting it in the Auth header

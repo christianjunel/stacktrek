@@ -10,7 +10,7 @@ const WorkoutsAnaerobic = ({ setAuth }) => {
       
         try {
             const response = await fetch(
-                "http://localhost:8000/profile",
+                "https://somactive-server-test.herokuapp.com/profile",
                 {
                     method: "GET",
                     //retrieving the token and putting it in the Auth header
@@ -35,7 +35,7 @@ const WorkoutsAnaerobic = ({ setAuth }) => {
             } 
 
             const responseWorkouts = await fetch(
-                "http://localhost:8000/workout",
+                "https://somactive-server-test.herokuapp.com/workout",
                 {
                     method: "GET",
                     //retrieving the token and putting it in the Auth header

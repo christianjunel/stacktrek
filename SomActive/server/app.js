@@ -7,6 +7,8 @@ import bcrypt from "bcryptjs"
 import { auth } from "./middleware/auth.js"
 import cors from "cors"
 import multer from "multer"
+import dotenv from "dotenv"
+dotenv.config()
 
 const app = express();
 const pool = connectDatabase();

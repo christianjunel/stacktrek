@@ -61,11 +61,13 @@ const Register = ({ setAuth, selected }) => {
                     const body = { username, first_name, last_name, birthdate, email_address, registration_date, user_password, sex, height_in_cm, weight_in_kg, user_reminder_to_self}
     
                     const response = await fetch(
-                        "http://localhost:8000/register",
+                        "https://somactive-server-test.herokuapp.com/register",
                         {
                             method: "POST",
                             headers: {
-                                "Content-type": "application/json"
+                                "Content-type": "application/json",
+                                'Access-Control-Allow-Origin':'*',
+                                'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
                             },
                             body: JSON.stringify(body)
                         }
@@ -77,7 +79,7 @@ const Register = ({ setAuth, selected }) => {
     
                         let formData = new FormData()
                         formData.append("my-image", image)
-                        await fetch(`http://localhost:8000/upload`, {
+                        await fetch(`https://somactive-server-test.herokuapp.com/upload`, {
                             method: "POST",
                             body: formData
                         }) 

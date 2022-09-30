@@ -9,7 +9,7 @@ const Nutrition = ({ setAuth }, props) => {
         try {
 
             const response = await fetch(
-                "http://localhost:8000/profile",
+                "https://somactive-server-test.herokuapp.com/profile",
                 {
                     method: "GET",
                     //retrieving the token and putting it in the Auth header
@@ -20,7 +20,7 @@ const Nutrition = ({ setAuth }, props) => {
             const dataDiet = parseRes.rows[0].diet;
             setDiet(dataDiet)
             const responseNutrition = await fetch(
-                "http://localhost:8000/nutrition",
+                "https://somactive-server-test.herokuapp.com/nutrition",
                 {
                     method: "GET",
                     //retrieving the token and putting it in the Auth header

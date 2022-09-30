@@ -112,7 +112,7 @@ const MacroDashboard = (props, { setAuth }) => {
             const body = {passActivity, passDiet};
 
             const response = await fetch(
-                "http://localhost:8000/macroupdate",
+                "https://somactive-server-test.herokuapp.com/macroupdate",
                 {
                     method: "PUT",
                     headers: {

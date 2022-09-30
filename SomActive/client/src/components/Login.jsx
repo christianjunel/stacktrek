@@ -31,7 +31,7 @@ const Login = ({ setAuth }) => {
                 const body = { username, user_password }
     
                 const response = await fetch(
-                    "http://localhost:8000/login",
+                    "https://somactive-server-test.herokuapp.com/login",
                     {
                         method: "POST",
                         headers: {

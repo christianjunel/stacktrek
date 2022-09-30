@@ -39,7 +39,7 @@ const BMIUpdateModal = () => {
                     const body = {height_in_cm, weight_in_kg};
         
                     const response = await fetch(
-                        "http://localhost:8000/bmiupdate",
+                        "https://somactive-server-test.herokuapp.com/bmiupdate",
                         {
                             method: "POST",
                             headers: {

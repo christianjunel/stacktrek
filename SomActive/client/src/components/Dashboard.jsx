@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Row from "react-bootstrap/esm/Row";
 // import Button from 'react-bootstrap/Button';
 import Image from "react-bootstrap/Image";
 import BMIHistoryModal from "./BMIHistoryModal";
@@ -8,7 +7,6 @@ import MacroDashboard from "./MacroDashboard";
 import Nutrition from "./Nutrition";
 import './styles/Dashboard.css';
 import Workouts from "./Workouts";
-import Col from 'react-bootstrap/Col';
 
 // import BMI from "./BMI";
 // import DisplayPics from "./DisplayPics";
@@ -47,7 +45,7 @@ const Dashboard = ({ setAuth }) => {
         try {
             //fetch api that uses the GET method
             const response = await fetch(
-                "http://localhost:8000/profile",
+                "https://somactive-server-test.herokuapp.com/profile",
                 {
                     method: "GET",
                     //retrieving the token and putting it in the Auth header
@@ -61,7 +59,7 @@ const Dashboard = ({ setAuth }) => {
             console.log(parseRes.rows[0])
             setName(`${data.first_name} ${data.last_name}`);
             setBirthDate(getAge(data.birthdate));
-            setImage(`http://localhost:8000/img/${data.image_path}`)
+            setImage(`https://somactive-server-test.herokuapp.com/img/${data.image_path}`)
             setEmailAddress(data.email_address)
             setSex(data.sex)
             // setRegDate(`${new Date(data.registration_date)}`)

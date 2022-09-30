@@ -6,7 +6,7 @@ const BMI = async() => {
     try {
         //fetch api that uses the GET method
         const response = await fetch(
-            "http://localhost:8000/bmi",
+            "https://somactive-server-test.herokuapp.com/bmi",
             {
                 method: "GET",
                 //retrieving the token and putting it in the Auth header

@@ -12,7 +12,9 @@ CREATE TABLE users (
     email_address VARCHAR(60) NOT NULL,
     registration_date TIMESTAMP NOT NULL,
     user_password VARCHAR(60) NOT NULL,
-    sex VARCHAR(7) NOT NULL
+    sex VARCHAR(7) NOT NULL,
+    activity VARCHAR(7) NOT NULL,
+    diet VARCHAR(7) NOT NULL
 );
 
 -- INSERT INTO users (username, user_first_name, user_last_name, user_birthdate, user_profile_picture, user_email_address, user_registration_date, user_password, user_sex)
@@ -58,13 +60,9 @@ CREATE TABLE bmi_overview (
 
 CREATE TABLE workouts (
     workout_id SERIAL PRIMARY KEY NOT NULL,
-    workout_name VARCHAR(255) NOT NULL,
     link VARCHAR(100) NOT NULL,
-    duration TIME NOT NULL,
     category VARCHAR(20) NOT NULL,
-    bmi_id INT NOT NULL,
-        FOREIGN KEY(bmi_id)
-            REFERENCES bmi_overview(bmi_id)
+    type VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE profile_pictures (
